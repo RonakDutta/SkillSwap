@@ -28,7 +28,7 @@ const Navbar = () => {
 				trigger: document.documentElement,
 				start: "top -100px",
 				end: "top -150px",
-				scrub: 1,
+				scrub: 0.3,
 				toggleActions: "play none none reverse",
 			},
 		});
@@ -36,7 +36,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navRef}
-			className="fixed top-0 left-0 w-full z-50 font-raleway flex justify-between items-center px-4 md:px-8 py-4 transition-all duration-300"
+			className="fixed top-0 left-0 w-full z-50 font-bricolage flex justify-between items-center px-4 md:px-8 py-4 transition-all duration-300"
 		>
 			<Link to="/#home" smooth className="font-bold text-3xl flex items-center">
 				SkillSwap
@@ -63,7 +63,6 @@ const Navbar = () => {
 			</ul>
 
 			<div className="flex items-center gap-4">
-				{/* <button className="font-bold cursor-pointer text-gray-300 hover:text-[#2d336c]"> */}
 				<button className="py-2 px-4 border border-[#2d336c] hover:bg-[#22296c] hover:scale-105 duration-300 rounded-full font-semibold cursor-pointer text-neutral-200 hover:text-white transition-colors">
 					Login
 				</button>
